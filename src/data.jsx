@@ -12,7 +12,7 @@ import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
 import Work1 from './assets/project-1.jpg';
 import Work2 from './assets/project-2.jpg';
 import Work3 from './assets/project-3.jpg';
-import Work4 from './assets/project-4.jpg';
+
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -120,8 +120,8 @@ export const personalInfo = [
 export const stats = [
   {
     id: 1,
-    no: '3',
-    title: 'Months of <br /> Experience',
+    no: '1',
+    title: 'Years of <br /> Experience',
   },
 
   {
@@ -134,7 +134,7 @@ export const stats = [
 
   {
     id: 4,
-    no: '5',
+    no: '3',
     title: ' Awards <br /> Won',
   },
 ];
@@ -147,6 +147,14 @@ export const resume = [
     year: '2023',
     title: 'Flutter Developer <span>  Digi-Markiz </span>',
     desc: "I completed my Flutter internship at Digimarkiz in July 2023. During my internship, I learned the fundamentals of Flutter development, including state management, Firebase, and widgets.",
+  },
+  {
+    id: 2,
+    category: 'experience',
+    icon: <FaBriefcase />,
+    year: '2023 - Present',
+    title: 'Flutter Developer <span>  Techons </span>',
+    desc: "I currently hold the position of Flutter Developer at Techons, where I actively contribute to the team's success. Proficient in working with Restful APIs, Committed to delivering seamless and visually appealing user experiences.",
   },
 
   {
@@ -228,11 +236,11 @@ export const portfolio = [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Photo',
+        desc: 'Photo Editing',
       },
       {
         icon: <FaCode />,
-        title: 'Language : ',
+        title: 'Tool : ',
         desc: 'Canva',
       },
     ],
@@ -246,7 +254,7 @@ export const portfolio = [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Android App',
+        desc: 'Flutter Applications',
       },
       {
         icon: <FaCode />,
@@ -264,33 +272,16 @@ export const portfolio = [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Video',
+        desc: 'Video Editing',
       },
       {
         icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Adobe Premium',
+        title: 'Tool : ',
+        desc: 'Adobe Premiere',
       },
     ],
   },
 
-  {
-    id: 4,
-    img: Work4,
-    title: 'Photo Editing',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Photo',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Adobe Photoshop',
-      },
-    ],
-  },
 
 ];
 
