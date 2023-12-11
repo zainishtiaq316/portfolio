@@ -199,12 +199,7 @@
   .nav__link {
     column-gap: 20px;
   }
-  .home__img {
-    width: 270px;
-    height: 270px;
-    border-radius: 50%;
-    margin-top: auto;
-   }
+
   .nav__icon,
   .nav__name {
     font-size: var(--h3-font-size);
@@ -256,11 +251,8 @@
 @media screen and (max-width : 450px) { 
 
   .home__img {
-    width: 270px;
-    height: 270px;
-    border-radius: 50%;
-    margin-top: auto;
-   }
+    display: none;
+  }
 
   .home__content {
     margin-block: auto;
@@ -291,12 +283,6 @@
   .home__title span {
     display: inline;
   }
-  .home__img {
-    width: 270px;
-    height: 270px;
-    border-radius: 50%;
-    margin-top: auto;
-   }
 
   .stats{
     grid-template-columns: 1fr;
