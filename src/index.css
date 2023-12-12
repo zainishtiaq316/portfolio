@@ -251,7 +251,10 @@
 @media screen and (max-width : 450px) { 
 
   .home__img {
-    display: none;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    margin-top: auto;
   }
 
   .home__content {
@@ -279,6 +282,13 @@
 }
 
 @media screen and (max-width : 350px) {
+
+  .home__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: auto;
+  }
 
   .home__title span {
     display: inline;
