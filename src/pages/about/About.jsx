@@ -5,7 +5,8 @@ import { FaDownload } from "react-icons/fa";
 import Skills from "../../components/Skills";
 import { resume } from "../../data";
 import ResumeItem from "../../components/Resumeitem";
-import "./about.css"
+import "./about.css";
+import CV from "../../assets/zain-cv.pdf";
 const About=()=>{
     return (
         <main className="section container">
@@ -19,7 +20,7 @@ const About=()=>{
                    <ul className="info__list grid">
                     <Info/>
                    </ul>
-                   <a  download ='' className="button">
+                   <a  href ={CV} download ='' className="button">
                    Download Cv
                    <span className="button__icon">
 
