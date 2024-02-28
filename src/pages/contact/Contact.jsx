@@ -6,7 +6,8 @@ import{
     FaFacebookF,
     FaTwitter,
     FaLinkedinIn,
-    FaWhatsapp
+    FaWhatsapp,
+    FaInstagram
 } from "react-icons/fa";
 
 import{FiSend} from 'react-icons/fi'
@@ -50,7 +51,7 @@ const Contact=()=>{
                             <FaFacebookF/>
                         </a>
                         <a href="https://twitter.com/ZainIshtiaq_316" className="contact__social-link">
-                            <FaTwitter/>
+                            <FaInstagram/>
                         </a>
                         <a href="https://www.linkedin.com/in/zain-ishtiaq316/" className="contact__social-link">
                             <FaLinkedinIn/>
