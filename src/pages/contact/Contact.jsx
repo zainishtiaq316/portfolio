@@ -50,7 +50,7 @@ const Contact=()=>{
                         <a href="https://www.facebook.com/zainishtiaq.316/" className="contact__social-link">
                             <FaFacebookF/>
                         </a>
-                        <a href="https://twitter.com/ZainIshtiaq_316" className="contact__social-link">
+                        <a href="https://www.instagram.com/mr_zain.ishtiaq316/" className="contact__social-link">
                             <FaInstagram/>
                         </a>
                         <a href="https://www.linkedin.com/in/zain-ishtiaq316/" className="contact__social-link">
