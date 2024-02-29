@@ -86,18 +86,18 @@ const Contact=()=>{
 
                     <div className="form__input-group">
                         <div className="form__input-div">
-                            <input type="text" placeholder="Your Name" className="form__control" name="user_name"/>
+                            <input type="text" placeholder="Your Name" className="form__control" name="user_name" required/>
                         </div>
                         <div className="form__input-div">
-                            <input type="email" placeholder="Your Email" className="form__control" name="user_email"/>
+                            <input type="email" placeholder="Your Email" className="form__control" name="user_email" required/>
                         </div>
                         <div className="form__input-div">
-                            <input type="text" placeholder="Your Subject" className="form__control" name="subject"/>
+                            <input type="text" placeholder="Your Subject" className="form__control" name="subject" required/>
                         </div>
                     </div>
 
                     <div className="form__input-div">
-                      <textarea placeholder="Your Message" className="form__control textarea" name="message">
+                      <textarea placeholder="Your Message" className="form__control textarea" name="message" required>
 
                       </textarea>  
      
