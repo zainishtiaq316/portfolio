@@ -232,7 +232,27 @@ export const skills = [
   },
   {
     id: 10,
-    title: 'Rest Api',
+    title: 'Restful Api',
+    percentage: '60',
+  },
+  {
+    id: 11,
+    title: 'Getx',
+    percentage: '55',
+  },
+  {
+    id: 12,
+    title: 'Firebase',
+    percentage: '65',
+  },
+  {
+    id: 13,
+    title: 'GIT/Version Control',
+    percentage: '75',
+  },
+  {
+    id: 14,
+    title: 'Testing',
     percentage: '60',
   },
 ];
