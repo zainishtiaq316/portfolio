@@ -163,7 +163,7 @@ export const resume = [
     icon: <FaGraduationCap />,
     year: '2019-2023',
     title: "Bachelor's Degree <span> University of the Punjab </span>",
-    desc: "Bachelor's in Computer Science - 3.37 CGPA",
+    desc: "Bachelor's in Computer Science - <b>3.37</b> CGPA",
   },
 
   {
