@@ -153,8 +153,8 @@ export const resume = [
     category: 'experience',
     icon: <FaBriefcase />,
     year: '2023 - Present',
-    title: 'Flutter Developer <span>  Techons </span>',
-    desc: "I currently hold the position of Flutter Developer at Techons, where I actively contribute to the team's success. Proficient in working with Restful APIs, Committed to delivering seamless and visually appealing user experiences.",
+    title: 'Flutter Developer <span>  Hisbinary </span>',
+    desc: "I currently hold the position of Flutter Developer at Hisbinary, where I actively contribute to the team's success. Proficient in working with Restful APIs, Committed to delivering seamless and visually appealing user experiences.",
   },
 
   {
