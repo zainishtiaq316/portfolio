@@ -22,7 +22,7 @@ const About=()=>{
                    </ul>
                    <a  href ={CV} download ='' className="button">
                    Download Cv
-                   <span className="button__icon">
+                   <span className="button__icon py-4 px-5">
 
                    <FaDownload/>
                    </span>

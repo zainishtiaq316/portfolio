@@ -15,6 +15,18 @@
     object-fit: cover;
     vertical-align: middle;
 }
+.custom-github-bg {
+    background-color: #333; /* Example background color for github */
+  }
+  
+  .custom-view-bg {
+    background-color: #fff; /* Example background color for view */
+  }
+  
+  .custom-view-color {
+    color: #f00; /* Example color for view */
+  }
+  
 
 .portfolio__hover{
     background-color: var(--first-color);

@@ -15,24 +15,31 @@ import{FiSend} from 'react-icons/fi'
 import "./contact.css"
 
 const Contact=()=>{
-    const form = useRef();
-    const sendEmail = (e) => {
-        e.preventDefault();
     
-        emailjs
-          .sendForm('service_vgnnnmd', 'template_6uz1938', form.current, {
-            publicKey: 'vkbECHcXPhqIDzEiQ',
-          })
-          .then(
-            () => {
-              console.log('SUCCESS!');
-            },
-            (error) => {
-              console.log('FAILED...', error.text);
-            },
-          );
-          e.target.reset()
+
+      const onSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
+    
+        formData.append("access_key", "10c003ff-b20a-44af-b5ce-1b70b702e7cc");
+    
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData
+        });
+    
+        const data = await response.json();
+    
+        if (data.success) {
+          setResult("Form Submitted Successfully");
+          event.target.reset();
+        } else {
+          console.log("Error", data);
+          setResult(data.message);
+        }
       };
+    
     
     return (
         <section className="contact section">
@@ -66,30 +73,30 @@ const Contact=()=>{
                         </div>
                     </div>
 
-                    <div className="contact__socials">
-                        <a href="https://www.facebook.com/zainishtiaq.316/" className="contact__social-link">
+                    <div className="contact__socials ">
+                        <a href="https://www.facebook.com/zainishtiaq.316/" className="contact__social-link py-3 px-3">
                             <FaFacebookF/>
                         </a>
-                        <a href="https://www.instagram.com/mr_zain.ishtiaq316/" className="contact__social-link">
+                        <a href="https://www.instagram.com/mr_zain.ishtiaq316/" className="contact__social-link py-3 px-3">
                             <FaInstagram/>
                         </a>
-                        <a href="https://www.linkedin.com/in/zain-ishtiaq316/" className="contact__social-link">
+                        <a href="https://www.linkedin.com/in/zain-ishtiaq316/" className="contact__social-link py-3 px-3">
                             <FaLinkedinIn/>
                         </a>
-                        <a href="https://wa.me/qr/FVWEKH7KBTTSA1" className="contact__social-link">
+                        <a href="https://wa.me/qr/FVWEKH7KBTTSA1" className="contact__social-link py-3 px-3">
                             <FaWhatsapp/>
                         </a>
                     </div>
                 </div>
 
-                <form ref={form} onSubmit={sendEmail} className="contact__form">
+                <form onSubmit={onSubmit} className="contact__form">
 
                     <div className="form__input-group">
                         <div className="form__input-div">
-                            <input type="text" placeholder="Your Name" className="form__control" name="user_name" required/>
+                            <input type="text" placeholder="Your Name" className="form__control" name="name" required/>
                         </div>
                         <div className="form__input-div">
-                            <input type="email" placeholder="Your Email" className="form__control" name="user_email" required/>
+                            <input type="email" placeholder="Your Email" className="form__control" name="email" required/>
                         </div>
                         <div className="form__input-div">
                             <input type="text" placeholder="Your Subject" className="form__control" name="subject" required/>
@@ -104,7 +111,7 @@ const Contact=()=>{
                     </div>
                     <button className="button" type="submit">
                      Send Message
-                     <span className="button__icon contact__button-icon">
+                     <span className="button__icon contact__button-icon py-4 px-4">
                       <FiSend/>
                      </span>
                     </button>

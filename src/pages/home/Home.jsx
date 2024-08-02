@@ -19,7 +19,7 @@ const Home=()=>{
                   and growing personally, and I am always eager to improve my professional skills.</p>
                 
                 <Link to='/about' className="button">
-                    More About Me <span className='button__icon'><FaArrowRight/></span>
+                    More About Me <span className='button__icon py-5 px-5'><FaArrowRight/></span>
                 </Link>
             </div>
         </div>
