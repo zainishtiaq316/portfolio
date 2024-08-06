@@ -1,5 +1,6 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2'
 
 import{
     FaEnvelopeOpen,
@@ -15,7 +16,7 @@ import{FiSend} from 'react-icons/fi'
 import "./contact.css"
 
 const Contact=()=>{
-    
+    const [result, setResult] = React.useState("");
 
       const onSubmit = async (event) => {
         event.preventDefault();
@@ -32,7 +33,11 @@ const Contact=()=>{
         const data = await response.json();
     
         if (data.success) {
-          setResult("Form Submitted Successfully");
+            Swal.fire({
+                title: "Success!",
+                text: "Message sent successfully ☺️",
+                icon: "success"
+              });
           event.target.reset();
         } else {
           console.log("Error", data);
