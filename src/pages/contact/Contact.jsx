@@ -35,7 +35,7 @@ const Contact=()=>{
         if (data.success) {
             Swal.fire({
                 title: "Success!",
-                text: "Message sent successfully ☺️",
+                text: "Message sent successfully!",
                 icon: "success"
               });
           event.target.reset();
