@@ -16,6 +16,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  view_code_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -47,8 +48,8 @@ const ProjectCard = ({
             </div>
 
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="yellow-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
+              onClick={() => window.open(view_code_link, "_blank")}
+              className="red-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
                 src={view}
@@ -56,11 +57,7 @@ const ProjectCard = ({
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
-        
-        
           </div>
-       
-       
         </div>
 
         <div className="mt-5">
@@ -70,12 +67,14 @@ const ProjectCard = ({
 
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
+            <div
+  key={`${name}-${tag.name}`}
+  className={`text-[14px] text-white px-2 py-1 rounded 
+    ${tag.name === 'flutter' ? 'bg-blue-700' : tag.name === 'dart' ? 'bg-green-700' : tag.name === 'firebase' ?'bg-yellow-700' : tag.name === 'Api Integration' ?'bg-red-700': 'bg-gray-200'}`}
+>
+  {tag.name}
+</div>
+
           ))}
         </div>
       </Tilt>

@@ -140,9 +140,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Food Delivery App",
+    name: "Property Yar App",
     description:
-      "App-based platform that allows users to browse, order, and manage food deliveries from multiple restaurants, providing a convenient and efficient solution for satisfying their hunger cravings.",
+      "Collaborated on a real estate app, designing intuitive UI elements, integrating Firebase for real-time data and authentication, and ensuring mobile-responsive design for smooth user experience.",
     tags: [
       {
         name: "flutter",
@@ -153,47 +153,72 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "Laravel",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: food,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Flutter Web Portfolio",
-    description:
-      "A web-based portfolio application developed using Flutter & Dart , showcase of my skills, projects, and experiences using Flutter for interactive and visually appealing presentation.",
-    tags: [
-      {
-        name: "flutter",
-        color: "blue-text-gradient",
+        name: "Api Integration",
+        color: "yellow-text-gradient",
       },
       {
-        name: "dart",
-        color: "green-text-gradient",
+        name: "firebase",
+        color: "yellow-text-gradient",
       },
-    ],
-    image: portfolio,
-    source_code_link: "https://github.com/techcoder01/protfolio",
-  },
-  {
-    name: "Flutter Animation & UI's",
-    description:
-      "Experience mesmerizing animations and beautiful UI designs using Flutter & Dart . Unleash your creativity with Flutter's powerful toolkit and explore an immersive development journey. ",
-    tags: [
-      {
-        name: "flutter",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "dart",
-        color: "green-text-gradient",
-      },
+     
     ],
     image: ui,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/zainishtiaq316/property-yar",
+    view_code_link: "https://play.google.com/store/apps/details?id=com.propertyyar.realestate&hl=en",
   },
+  {
+    name: "E Broker App",
+    description:
+      "Collaborated on designing and managing the user interface for an intuitive property app, ensuring user-friendly UI and seamless navigation, along with effective backend integration.",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "dart",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Api Integration",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "yellow-text-gradient",
+      },
+      
+    ],
+    image: portfolio,
+    source_code_link: "https://github.com/zainishtiaq316/ebroker/",
+    view_code_link: "https://play.google.com/store/apps/details?id=com.ebroker.wrteam&hl=en",
+  },
+
+
+  {
+    name: "Wheel IT App",
+    description:
+      "Developed a user-friendly travel app for Pakistan, enabling users to explore destinations, book trips, and manage plans, with admin features for handling trip requests, bookings, and notifications. ",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "dart",
+        color: "green-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "yellow-text-gradient",
+      },
+      
+    ],
+    image: food,
+    source_code_link: "https://github.com/zainishtiaq316/wheelit",
+    view_code_link: "https://drive.google.com/file/d/13iL3BUQ7B2Abzq7ZJYmZRUvcQnHKXmb9/view?usp=sharing",
+  },
+
 ];
 
 export { services, technologies, experiences, testimonials, projects };
