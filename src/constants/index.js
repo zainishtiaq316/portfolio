@@ -216,7 +216,7 @@ const projects = [
     ],
     image: portfolio,
     source_code_link: "https://github.com/zainishtiaq316/ebroker/",
-    view_code_link: "https://play.google.com/store/apps/details?id=com.ebroker.wrteam&hl=en",
+    view_code_link: "https://drive.google.com/drive/folders/1Y0wXrgJ695XkMWvpqd8JuxwHd91ykrBa?usp=sharing",
   },
 
 
