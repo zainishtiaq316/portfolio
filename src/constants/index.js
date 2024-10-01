@@ -189,7 +189,7 @@ const projects = [
     ],
     image: ui,
     source_code_link: "https://github.com/zainishtiaq316/property-yar",
-    view_code_link: "https://play.google.com/store/apps/details?id=com.propertyyar.realestate&hl=en",
+    view_code_link: "https://drive.google.com/drive/folders/1LvSTNDy5M3cwS-Q5KwyiofERKdT1Zux3?usp=sharing",
   },
   {
     name: "E Broker App",
