@@ -1,5 +1,6 @@
 import {
   mobile,
+  attend,
   backend,
   creator,
   web,
@@ -139,6 +140,30 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Attend Easy App",
+    description:
+      "Developed Attend-Easy, an intuitive app for students and administrators to streamline attendance tracking. The app allows users to manage profiles, handle leave requests, and offers support channels.",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "dart",
+        color: "green-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "yellow-text-gradient",
+      },
+      
+    ],
+    image: attend,
+    source_code_link: "https://drive.google.com/file/d/12V45yqptVVq2Q5z0IBDVu2Ocvp7p0xHp/view?usp=sharing",
+    view_code_link: "https://drive.google.com/drive/folders/1EJ7iuVxRvc7R2Y9Z3codVRRqKWBJub1b?usp=sharing",
+  },
+
   {
     name: "Property Yar App",
     description:
