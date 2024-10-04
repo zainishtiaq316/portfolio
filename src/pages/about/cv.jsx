@@ -1,14 +1,26 @@
 import React from 'react';
+import Profile from "../../assets/home.jpg"
+import CV from "../../assets/zain-cv.pdf";
+
 
 function NextPage() {
     return (
         <div className="bg-gray-100 min-h-screen p-5 md:p-10 flex items-center justify-center">
           <div className="bg-white shadow-2xl rounded-lg p-8 max-w-6xl w-full">
+            {/* Download Button */}
+            <div className="flex justify-end mb-4">
+              <a href ={CV} download ='ZainIshtiaq_Resume.pdf'>
+              <div className="bg-blue-500 text-white py-2 px-4 rounded-lg shadow hover:bg-blue-600 transition duration-300">
+                Download Resume
+              </div>
+              </a>
+            </div>
+
             {/* Header Section with Photo and Summary */}
             <div className="flex flex-col md:flex-row items-center md:items-start md:justify-between mb-12">
               <div className="text-center md:text-left mb-6 md:mb-0">
                 <img 
-                  src="https://via.placeholder.com/150" 
+                  src={Profile} 
                   alt="Zain Ishtiaq" 
                   className="w-32 h-32 rounded-full mx-auto md:mx-0 mb-4"
                 />
@@ -19,7 +31,7 @@ function NextPage() {
                 <p className="text-gray-600"><strong>Email:</strong> zainishtiaq.7866@gmail.com</p>
                 <p className="text-gray-600"><strong>Phone:</strong> +92 302 8163676</p>
                 <p className="text-gray-600"><strong>Location:</strong> Lahore, Pakistan</p>
-                <p className="text-gray-600"><strong>Website:</strong> <a href="https://zainishtiaq.netifly.app" className="text-blue-500">zainishtiaq.netifly.app</a></p>
+                <p className="text-gray-600"><strong>Website:</strong> <a href="https://zainishtiaq.netlify.app/" className="text-blue-500">zainishtiaq.netifly.app</a></p>
                 <p className="text-gray-600"><strong>GitHub:</strong> <a href="https://github.com/zainishtiaq316" className="text-blue-500">github.com/zainishtiaq316</a></p>
               </div>
             </div>
@@ -28,7 +40,7 @@ function NextPage() {
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4 text-indigo-600">Professional Summary</h2>
               <p className="text-gray-700 leading-relaxed">
-                Hi, I am Zain Ishtiaq, currently on my journey to become a proficient Flutter Developer by utilizing my programming skills and creativity to develop innovative and user-friendly applications that make a positive impact on people's lives. I am committed to continuous learning and professional growth while delivering clean, scalable code and robust software solutions.
+              Hi, I am Zain Ishtiaq. I am currently on my journey to become a proficient Flutter Developer by utilizing my programming skills and creativity to develop innovative and user-friendly applications that can make a positive impact on people's lives. I am committed to learning new things and growing personally, and I am always eager to improve my professional skills.
               </p>
             </div>
     
@@ -39,12 +51,16 @@ function NextPage() {
                 <h3 className="font-semibold">Flutter Developer | Hisbinary Software Company</h3>
                 <p className="text-gray-600">Lahore | Sep 2023 - Present</p>
                 <ul className="list-disc pl-5 mt-2 text-gray-700">
-                  <li>Participated in the design and creation of scalable software systems.</li>
-                  <li>Developed clean, functional code using Flutter for both Android and iOS platforms.</li>
-                  <li>Collaborated with cross-functional teams to build and deliver user-friendly applications.</li>
-                  <li>Integrated Firebase for real-time data synchronization and authentication.</li>
-                  <li>Managed version control using GIT and implemented thorough testing to ensure software quality.</li>
-                  <li>Enhanced user interfaces by implementing animations and custom widget libraries.</li>
+                  <li>Participating in the design and creation of Scalable software.</li>
+                  <li>Writing clean, functional code on the front-end.</li>
+                  <li>Testing and Fixing bugs or other coding issues.</li>
+                  <li>Working with development teams and product managers to idea software solutions.</li>
+                  <li>Troubleshoot, debug and upgrade software.</li>
+                  <li>Writing effective code for professional screens through playing with widgets.</li>
+                  <li>Writing clean code by refactoring each and every widgets and methods is the first priority to increase reading and reusability.</li>
+                  <li>Working on animations through different dependencies in flutter to make front-end beautiful and attractive.</li>
+                  <li>Make custom widgets and save it like professional folder structure for next use by just calling them.</li>
+                
                 </ul>
               </div>
             </div>
@@ -53,9 +69,9 @@ function NextPage() {
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4 text-indigo-600">Key Projects</h2>
               <ul className="list-disc pl-5 mt-2 text-gray-700">
-                <li><strong>Property Yar - Real Estate App:</strong> Designed and managed UI elements and listing layouts. Connected the app to Firebase for real-time data synchronization, collaborating closely with the development team. <a href="https://play.google.com/store/apps/details?id=com.propertyyar.realestate&pcampaignid=web_share" className="text-blue-500">Play Store Link</a></li>
-                <li><strong>eBroker App:</strong> Collaborated in designing and managing the user interface for this real estate app, ensuring responsive design and user-friendly layouts. <a href="https://play.google.com/store/apps/details?id=com.ebroker.wrteam&pcampaignid=web_share" className="text-blue-500">Play Store Link</a></li>
-                <li><strong>Active Ecommerce Demo App:</strong> Designed and implemented user interfaces for this ecommerce app as part of an internship, gaining experience in UI/UX design principles for online stores. <a href="https://play.google.com/store/apps/details?id=com.aizflutterapp&pcampaignid=web_share" className="text-blue-500">Play Store Link</a></li>
+                <li><strong>Property Yar - Real Estate App:</strong> Designed and managed UI elements and listing layouts for the Property Yar real estate app and connect with firebase, collaborating with the development team. <a href="https://play.google.com/store/apps/details?id=com.propertyyar.realestate&pcampaignid=web_share" className="text-blue-500">Play Store Link</a></li>
+                <li><strong>eBroker App:</strong> Collaborated with a team to design and manage the user interface (UI) for the eBroker property app. <a href="https://play.google.com/store/apps/details?id=com.ebroker.wrteam&pcampaignid=web_share" className="text-blue-500">Play Store Link</a></li>
+                <li><strong>Active Ecommerce Demo App:</strong> Designed and implemented user interfaces (UI) for the Active Ecommerce Demo App during an internship, gaining valuable experience in e-commerce design principles. <a href="https://play.google.com/store/apps/details?id=com.aizflutterapp&pcampaignid=web_share" className="text-blue-500">Play Store Link</a></li>
               </ul>
             </div>
     
